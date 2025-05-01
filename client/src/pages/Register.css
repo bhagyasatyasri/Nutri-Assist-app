@@ -1,0 +1,97 @@
+.register {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border: 2px solid #a3c585; /* sage green border */
+  border-radius: 20px;
+  background-color: #fefae0; /* neutral creamy background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.register h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #4e944f; /* leaf green */
+}
+
+.test-email {
+  border-radius: 12px !important;
+  background-color: #e6f0ff;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+h3 {
+  font-size: 22px;
+  color: #4e944f; /* leaf green */
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.register input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* rounded corners on all sides */
+  background-color: #fff3b0; /* mustard yellow */
+  font-size: 16px;
+}
+
+.register input:focus {
+  border-color: #a3c585; /* sage green */
+  outline: none;
+  border-radius:12px;
+}
+
+.btn-primaryr {
+  width: 100%;
+  max-width: 300px;
+  padding: 14px;
+  margin-top: 20px;
+  margin-right: 5px;
+  background-color: #4e944f; /* leaf green */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primaryr:hover {
+  background-color: #2e7d32; /* deeper green */
+}
+
+.register p {
+  margin-top: 15px;
+  color: #555;
+}
+
+input:-webkit-autofill {
+  border-radius: 20px !important;
+  background-color: #e6f0ff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #e6f0ff inset !important;
+}

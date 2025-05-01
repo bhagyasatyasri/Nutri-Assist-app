@@ -1,0 +1,63 @@
+/* LogMeal.css */
+.log-meal {
+    padding: 2rem;
+    background-color: #fefae0; /* neutral creamy background */
+    min-height: 100vh;
+    color: #4e944f; /* leaf green text */
+  }
+  
+  .today-meals {
+    text-align: center;
+  }
+  
+  .today-meals h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4e944f;
+    margin-bottom: 1.5rem;
+  }
+  
+  .today-meals ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .today-meals li {
+    background-color: #fff3b0; /* mustard yellow */
+    border: 2px solid #a3c585; /* sage green border */
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4e944f; /* leaf green text */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .today-meals li:hover {
+    background-color: #f9e79f; /* lighter mustard on hover */
+    color: #2e7d32; /* deeper green text */
+    transform: scale(1.05);
+  }
+  
+  .loading-text {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .today-meals h3 {
+      font-size: 1.5rem;
+    }
+  
+    .today-meals li {
+      font-size: 1rem;
+    }
+  }
+  

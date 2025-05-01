@@ -1,0 +1,57 @@
+.diet-plan-user-page {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fefae0; /* neutral creamy background */
+  min-height: 100vh;
+  color: #4e944f; /* leaf green text */
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.plan-card {
+  border: 2px solid #a3c585; /* sage green border */
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #fff3b0; /* mustard yellow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.plan-card h4 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4e944f;
+}
+
+.plan-card p {
+  font-size: 1.1rem;
+  color: #4e944f;
+}
+
+.plan-card:hover {
+  background-color: #f9e79f; /* lighter mustard on hover */
+  transform: scale(1.05);
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #999;
+}
+
+.error-text {
+  color: red;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .plan-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

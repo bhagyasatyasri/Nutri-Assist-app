@@ -1,0 +1,54 @@
+/* Navbar container */
+.navbar-theme {
+  background-color: #4e944f; /* 🍃 Leaf green */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar brand (title/logo) */
+.navbar-theme .navbar-brand {
+  font-size: 1.5rem;
+  color: #fff3b0; /* 🍯 Soft mustard */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar links container */
+.navbar-theme .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Individual link style */
+.navbar-theme .nav-link {
+  background-color: #a3c585; /* 🌿 Sage green */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-theme .nav-link:hover {
+  color: #f9e79f; /* 🌞 Brighter mustard */
+}
+
+/* Logout button */
+.navbar-theme .logout-btn {
+  background-color: #a3c585; /* 🌿 Sage green */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-theme .logout-btn:hover {
+  color: #f9e79f; /* 🌿 Deeper green */
+}

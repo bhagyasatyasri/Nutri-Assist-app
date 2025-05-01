@@ -1,0 +1,30 @@
+.tiles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.tile {
+  background-color: #fff3b0;         /* 🍯 Soft mustard background */
+  border: 2px solid #a3c585;         /* 🌿 Sage green border */
+  color: #4e944f;                    /* 🍃 Leaf green text */
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.tile:hover {
+  background-color: #f9e79f;         /* 🌞 Brighter mustard on hover */
+  color: #2e7d32;                    /* 🌿 Deeper green text on hover */
+  transform: scale(1.05);
+}
+
+.tiles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

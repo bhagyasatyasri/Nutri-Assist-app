@@ -1,0 +1,97 @@
+/* Sidebar container */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff3b0; /* 🍯 Mustard background */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.sidebar-container.show {
+  left: 0;
+}
+
+.sidebar-content {
+  padding-top: 70px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 5rem 0 0 0;
+}
+
+.sidebar-content li {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #a3c585; /* 🍃 Sage green divider */
+  font-weight: bold;
+  color: #4e944f; /* Leafy green text */
+}
+
+.sidebar-content li a {
+  text-decoration: none;
+  color: #4e944f;
+  display: block;
+}
+
+.sidebar-content li a:hover {
+  background-color: #fefae0; /* Light hover highlight */
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  background-color: #4e944f; /* Dark green button */
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 0.6rem 1rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Main content */
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.app-container {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.sidebar-closed .sidebar {
+  width: 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.sidebar-closed .main-content {
+  width: 100%;
+}
+
+/* Overlay when sidebar is open */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}

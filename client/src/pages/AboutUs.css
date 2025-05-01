@@ -1,0 +1,199 @@
+.admin-dashboard {
+    padding: 2rem;
+    background-color: #fffdf5; /* Light cream background */
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif; /* Modern font for better readability */
+  }
+  
+  .admin-dashboard h2 {
+    color: #4e944f; /* Leaf green */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+  }
+  /* General container for the About Us page */
+.about-container {
+    padding: 2rem;
+    background-color: #fffdf5; /* Light cream background */
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styles */
+  .about-container h1 {
+    color: #4e944f; /* Leaf green */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  /* Paragraph text */
+  .about-container p {
+    color: #555; /* Dark grey text for readability */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  /* Strong text highlighting */
+  .about-container strong {
+    color: #2e7d32; /* Deep green */
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    margin-top: 3rem;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    color: #2e7d32; /* Deep green for section heading */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    border-color: #4e944f; /* Focus state color */
+  }
+  
+  .contact-section button {
+    background-color: #4e944f; /* Leaf green button */
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .about-container h1 {
+      font-size: 2rem; /* Smaller heading for mobile */
+    }
+  
+    .about-container p {
+      font-size: 1rem; /* Smaller paragraph text */
+    }
+  
+    .contact-section {
+      padding: 1.5rem;
+    }
+  
+    .contact-section input,
+    .contact-section textarea {
+      font-size: 0.9rem; /* Smaller input fields on mobile */
+    }
+  
+    .contact-section button {
+      padding: 0.7rem; /* Smaller button for mobile */
+    }
+  }
+  
+  /* User Tiles Grid */
+  .user-tiles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem; /* Added padding for better spacing */
+  }
+  
+  /* Individual User Tile */
+  .user-tile {
+    background-color: #fff3b0; /* Soft mustard */
+    border: 2px solid #a3c585; /* Sage green */
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More refined shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Hover Effect for User Tile */
+  .user-tile:hover {
+    background-color: #f9e79f; /* Brighter mustard */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for hover effect */
+  }
+  
+  /* Title inside User Tile */
+  .user-tile h3 {
+    color: #2e7d32; /* Deeper green */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* User Tile Description */
+  .user-tile p {
+    color: #555; /* Dark grey for text for better readability */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-dashboard h2 {
+      font-size: 2rem; /* Adjusted heading size for smaller screens */
+    }
+  
+    .user-tiles-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 15px; /* Reduced gap for mobile */
+    }
+  
+    .user-tile {
+      padding: 1rem; /* Adjust padding inside tiles for smaller screens */
+    }
+  
+    .user-tile h3 {
+      font-size: 1rem; /* Smaller font for titles on mobile */
+    }
+  }
+  
